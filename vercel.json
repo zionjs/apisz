@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/fakecomment.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/brat.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "api/avatarcanvas.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/fakecomment",
+      "dest": "/api/fakecomment.js"
+    },
+    {
+      "src": "/api/brat",
+      "dest": "/api/brat.js"
+    },
+    {
+      "src": "/api/avatarcanvas",
+      "dest": "/api/avatarcanvas.js"
+    }
+  ]
+}
